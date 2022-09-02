@@ -208,5 +208,10 @@ namespace DATAGRID_PARCIAL
         {
             Application.Restart();
         }
+
+        private void textFilasMB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

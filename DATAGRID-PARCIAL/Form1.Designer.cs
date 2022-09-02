@@ -60,7 +60,7 @@
             // 
             // buttonSalir
             // 
-            this.buttonSalir.Location = new System.Drawing.Point(833, 28);
+            this.buttonSalir.Location = new System.Drawing.Point(1019, 734);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(102, 29);
             this.buttonSalir.TabIndex = 7;
@@ -74,7 +74,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textColmMA);
             this.groupBox1.Controls.Add(this.textFilasMA);
-            this.groupBox1.Location = new System.Drawing.Point(153, 39);
+            this.groupBox1.Location = new System.Drawing.Point(175, 39);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(312, 80);
             this.groupBox1.TabIndex = 1;
@@ -119,7 +119,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.textColmMB);
             this.groupBox2.Controls.Add(this.textFilasMB);
-            this.groupBox2.Location = new System.Drawing.Point(504, 39);
+            this.groupBox2.Location = new System.Drawing.Point(703, 39);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(312, 80);
             this.groupBox2.TabIndex = 4;
@@ -157,11 +157,12 @@
             this.textFilasMB.Name = "textFilasMB";
             this.textFilasMB.Size = new System.Drawing.Size(100, 23);
             this.textFilasMB.TabIndex = 3;
+            this.textFilasMB.TextChanged += new System.EventHandler(this.textFilasMB_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(223, 122);
+            this.label5.Location = new System.Drawing.Point(359, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(15, 15);
             this.label5.TabIndex = 7;
@@ -170,7 +171,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(697, 122);
+            this.label6.Location = new System.Drawing.Point(907, 144);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 15);
             this.label6.TabIndex = 8;
@@ -197,7 +198,7 @@
             // 
             // buttonMultiplicar
             // 
-            this.buttonMultiplicar.Location = new System.Drawing.Point(23, 90);
+            this.buttonMultiplicar.Location = new System.Drawing.Point(1081, 90);
             this.buttonMultiplicar.Name = "buttonMultiplicar";
             this.buttonMultiplicar.Size = new System.Drawing.Size(102, 29);
             this.buttonMultiplicar.TabIndex = 6;
@@ -207,7 +208,7 @@
             // 
             // buttonAgregar
             // 
-            this.buttonAgregar.Location = new System.Drawing.Point(23, 39);
+            this.buttonAgregar.Location = new System.Drawing.Point(1081, 39);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(102, 29);
             this.buttonAgregar.TabIndex = 5;
@@ -220,7 +221,7 @@
             this.matrizA.AllowUserToAddRows = false;
             this.matrizA.AllowUserToDeleteRows = false;
             this.matrizA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.matrizA.Location = new System.Drawing.Point(34, 140);
+            this.matrizA.Location = new System.Drawing.Point(175, 162);
             this.matrizA.Name = "matrizA";
             this.matrizA.RowTemplate.Height = 25;
             this.matrizA.Size = new System.Drawing.Size(418, 255);
@@ -232,7 +233,7 @@
             this.matrizB.AllowUserToAddRows = false;
             this.matrizB.AllowUserToDeleteRows = false;
             this.matrizB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.matrizB.Location = new System.Drawing.Point(494, 420);
+            this.matrizB.Location = new System.Drawing.Point(703, 454);
             this.matrizB.Name = "matrizB";
             this.matrizB.RowTemplate.Height = 25;
             this.matrizB.Size = new System.Drawing.Size(418, 255);
@@ -243,7 +244,7 @@
             this.matrizRAB.AllowUserToAddRows = false;
             this.matrizRAB.AllowUserToDeleteRows = false;
             this.matrizRAB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.matrizRAB.Location = new System.Drawing.Point(494, 140);
+            this.matrizRAB.Location = new System.Drawing.Point(703, 162);
             this.matrizRAB.Name = "matrizRAB";
             this.matrizRAB.RowTemplate.Height = 25;
             this.matrizRAB.Size = new System.Drawing.Size(418, 255);
@@ -254,7 +255,7 @@
             this.matrizRBA.AllowUserToAddRows = false;
             this.matrizRBA.AllowUserToDeleteRows = false;
             this.matrizRBA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.matrizRBA.Location = new System.Drawing.Point(34, 420);
+            this.matrizRBA.Location = new System.Drawing.Point(175, 454);
             this.matrizRBA.Name = "matrizRBA";
             this.matrizRBA.RowTemplate.Height = 25;
             this.matrizRBA.Size = new System.Drawing.Size(418, 255);
@@ -262,11 +263,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(833, 65);
+            this.button1.Location = new System.Drawing.Point(863, 734);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 29);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Reiniciar";
+            this.button1.Text = "REINICIAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -274,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 752);
+            this.ClientSize = new System.Drawing.Size(1195, 784);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.matrizRBA);
