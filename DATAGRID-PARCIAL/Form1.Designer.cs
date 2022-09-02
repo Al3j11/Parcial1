@@ -39,22 +39,23 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textColmMB = new System.Windows.Forms.TextBox();
             this.textFilasMB = new System.Windows.Forms.TextBox();
-            this.dataGridMA = new System.Windows.Forms.DataGridView();
-            this.dataGridMAMB = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dataGridMBMA = new System.Windows.Forms.DataGridView();
-            this.dataGridB = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.buttonMultiplicar = new System.Windows.Forms.Button();
             this.buttonAgregar = new System.Windows.Forms.Button();
+            this.matrizA = new System.Windows.Forms.DataGridView();
+            this.matrizB = new System.Windows.Forms.DataGridView();
+            this.matrizRAB = new System.Windows.Forms.DataGridView();
+            this.matrizRBA = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMAMB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMBMA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matrizA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matrizB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matrizRAB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matrizRBA)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSalir
@@ -157,28 +158,10 @@
             this.textFilasMB.Size = new System.Drawing.Size(100, 23);
             this.textFilasMB.TabIndex = 3;
             // 
-            // dataGridMA
-            // 
-            this.dataGridMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMA.Location = new System.Drawing.Point(37, 197);
-            this.dataGridMA.Name = "dataGridMA";
-            this.dataGridMA.RowTemplate.Height = 25;
-            this.dataGridMA.Size = new System.Drawing.Size(376, 179);
-            this.dataGridMA.TabIndex = 5;
-            // 
-            // dataGridMAMB
-            // 
-            this.dataGridMAMB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMAMB.Location = new System.Drawing.Point(452, 197);
-            this.dataGridMAMB.Name = "dataGridMAMB";
-            this.dataGridMAMB.RowTemplate.Height = 25;
-            this.dataGridMAMB.Size = new System.Drawing.Size(364, 179);
-            this.dataGridMAMB.TabIndex = 6;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(175, 170);
+            this.label5.Location = new System.Drawing.Point(223, 122);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(15, 15);
             this.label5.TabIndex = 7;
@@ -187,34 +170,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(638, 170);
+            this.label6.Location = new System.Drawing.Point(697, 122);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 15);
             this.label6.TabIndex = 8;
             this.label6.Text = "AxB";
-            // 
-            // dataGridMBMA
-            // 
-            this.dataGridMBMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridMBMA.Location = new System.Drawing.Point(37, 405);
-            this.dataGridMBMA.Name = "dataGridMBMA";
-            this.dataGridMBMA.RowTemplate.Height = 25;
-            this.dataGridMBMA.Size = new System.Drawing.Size(376, 179);
-            this.dataGridMBMA.TabIndex = 9;
-            // 
-            // dataGridB
-            // 
-            this.dataGridB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridB.Location = new System.Drawing.Point(452, 405);
-            this.dataGridB.Name = "dataGridB";
-            this.dataGridB.RowTemplate.Height = 25;
-            this.dataGridB.Size = new System.Drawing.Size(364, 179);
-            this.dataGridB.TabIndex = 10;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(651, 387);
+            this.label7.Location = new System.Drawing.Point(703, 402);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(14, 15);
             this.label7.TabIndex = 11;
@@ -223,7 +189,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(175, 387);
+            this.label8.Location = new System.Drawing.Point(220, 402);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 15);
             this.label8.TabIndex = 12;
@@ -237,6 +203,7 @@
             this.buttonMultiplicar.TabIndex = 6;
             this.buttonMultiplicar.Text = "MULTIPLICAR";
             this.buttonMultiplicar.UseVisualStyleBackColor = true;
+            this.buttonMultiplicar.Click += new System.EventHandler(this.buttonMultiplicar_Click);
             // 
             // buttonAgregar
             // 
@@ -246,6 +213,62 @@
             this.buttonAgregar.TabIndex = 5;
             this.buttonAgregar.Text = "AGREGAR";
             this.buttonAgregar.UseVisualStyleBackColor = true;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
+            // 
+            // matrizA
+            // 
+            this.matrizA.AllowUserToAddRows = false;
+            this.matrizA.AllowUserToDeleteRows = false;
+            this.matrizA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.matrizA.Location = new System.Drawing.Point(34, 140);
+            this.matrizA.Name = "matrizA";
+            this.matrizA.RowTemplate.Height = 25;
+            this.matrizA.Size = new System.Drawing.Size(418, 255);
+            this.matrizA.TabIndex = 13;
+            this.matrizA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // matrizB
+            // 
+            this.matrizB.AllowUserToAddRows = false;
+            this.matrizB.AllowUserToDeleteRows = false;
+            this.matrizB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.matrizB.Location = new System.Drawing.Point(494, 420);
+            this.matrizB.Name = "matrizB";
+            this.matrizB.RowTemplate.Height = 25;
+            this.matrizB.Size = new System.Drawing.Size(418, 255);
+            this.matrizB.TabIndex = 14;
+            // 
+            // matrizRAB
+            // 
+            this.matrizRAB.AllowUserToAddRows = false;
+            this.matrizRAB.AllowUserToDeleteRows = false;
+            this.matrizRAB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.matrizRAB.Location = new System.Drawing.Point(494, 140);
+            this.matrizRAB.Name = "matrizRAB";
+            this.matrizRAB.RowTemplate.Height = 25;
+            this.matrizRAB.Size = new System.Drawing.Size(418, 255);
+            this.matrizRAB.TabIndex = 15;
+            // 
+            // matrizRBA
+            // 
+            this.matrizRBA.AllowUserToAddRows = false;
+            this.matrizRBA.AllowUserToDeleteRows = false;
+            this.matrizRBA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.matrizRBA.Location = new System.Drawing.Point(34, 420);
+            this.matrizRBA.Name = "matrizRBA";
+            this.matrizRBA.RowTemplate.Height = 25;
+            this.matrizRBA.Size = new System.Drawing.Size(418, 255);
+            this.matrizRBA.TabIndex = 16;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(833, 65);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 29);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Reiniciar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -253,16 +276,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 752);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.matrizRBA);
+            this.Controls.Add(this.matrizRAB);
+            this.Controls.Add(this.matrizB);
+            this.Controls.Add(this.matrizA);
             this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.buttonMultiplicar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dataGridB);
-            this.Controls.Add(this.dataGridMBMA);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridMAMB);
-            this.Controls.Add(this.dataGridMA);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonSalir);
@@ -274,10 +298,10 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMAMB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridMBMA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matrizA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matrizB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matrizRAB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.matrizRBA)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,15 +320,16 @@
         private Label label4;
         private TextBox textColmMB;
         private TextBox textFilasMB;
-        private DataGridView dataGridMA;
-        private DataGridView dataGridMAMB;
         private Label label5;
         private Label label6;
-        private DataGridView dataGridMBMA;
-        private DataGridView dataGridB;
         private Label label7;
         private Label label8;
         private Button buttonMultiplicar;
         private Button buttonAgregar;
+        private DataGridView matrizA;
+        private DataGridView matrizB;
+        private DataGridView matrizRAB;
+        private DataGridView matrizRBA;
+        private Button button1;
     }
 }
