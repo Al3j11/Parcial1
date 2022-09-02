@@ -59,10 +59,10 @@
             // 
             // buttonSalir
             // 
-            this.buttonSalir.Location = new System.Drawing.Point(23, 25);
+            this.buttonSalir.Location = new System.Drawing.Point(833, 28);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(102, 29);
-            this.buttonSalir.TabIndex = 0;
+            this.buttonSalir.TabIndex = 9;
             this.buttonSalir.Text = "SALIR";
             this.buttonSalir.UseVisualStyleBackColor = true;
             this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
@@ -148,14 +148,14 @@
             this.textColmMB.Location = new System.Drawing.Point(160, 41);
             this.textColmMB.Name = "textColmMB";
             this.textColmMB.Size = new System.Drawing.Size(100, 23);
-            this.textColmMB.TabIndex = 1;
+            this.textColmMB.TabIndex = 4;
             // 
             // textFilasMB
             // 
             this.textFilasMB.Location = new System.Drawing.Point(10, 41);
             this.textFilasMB.Name = "textFilasMB";
             this.textFilasMB.Size = new System.Drawing.Size(100, 23);
-            this.textFilasMB.TabIndex = 0;
+            this.textFilasMB.TabIndex = 3;
             // 
             // dataGridMA
             // 
@@ -231,19 +231,19 @@
             // 
             // buttonMultiplicar
             // 
-            this.buttonMultiplicar.Location = new System.Drawing.Point(23, 100);
+            this.buttonMultiplicar.Location = new System.Drawing.Point(23, 90);
             this.buttonMultiplicar.Name = "buttonMultiplicar";
             this.buttonMultiplicar.Size = new System.Drawing.Size(102, 29);
-            this.buttonMultiplicar.TabIndex = 13;
+            this.buttonMultiplicar.TabIndex = 7;
             this.buttonMultiplicar.Text = "MULTIPLICAR";
             this.buttonMultiplicar.UseVisualStyleBackColor = true;
             // 
             // buttonAgregar
             // 
-            this.buttonAgregar.Location = new System.Drawing.Point(23, 65);
+            this.buttonAgregar.Location = new System.Drawing.Point(23, 39);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(102, 29);
-            this.buttonAgregar.TabIndex = 14;
+            this.buttonAgregar.TabIndex = 6;
             this.buttonAgregar.Text = "AGREGAR";
             this.buttonAgregar.UseVisualStyleBackColor = true;
             // 
@@ -251,7 +251,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 752);
+            this.ClientSize = new System.Drawing.Size(947, 752);
             this.ControlBox = false;
             this.Controls.Add(this.buttonAgregar);
             this.Controls.Add(this.buttonMultiplicar);
