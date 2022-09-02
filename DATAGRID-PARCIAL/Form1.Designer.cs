@@ -60,7 +60,7 @@
             // 
             // buttonSalir
             // 
-            this.buttonSalir.Location = new System.Drawing.Point(1019, 734);
+            this.buttonSalir.Location = new System.Drawing.Point(1165, 627);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(102, 29);
             this.buttonSalir.TabIndex = 7;
@@ -198,7 +198,7 @@
             // 
             // buttonMultiplicar
             // 
-            this.buttonMultiplicar.Location = new System.Drawing.Point(1081, 90);
+            this.buttonMultiplicar.Location = new System.Drawing.Point(1144, 109);
             this.buttonMultiplicar.Name = "buttonMultiplicar";
             this.buttonMultiplicar.Size = new System.Drawing.Size(102, 29);
             this.buttonMultiplicar.TabIndex = 6;
@@ -208,7 +208,7 @@
             // 
             // buttonAgregar
             // 
-            this.buttonAgregar.Location = new System.Drawing.Point(1081, 39);
+            this.buttonAgregar.Location = new System.Drawing.Point(1144, 51);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(102, 29);
             this.buttonAgregar.TabIndex = 5;
@@ -263,7 +263,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(863, 734);
+            this.button1.Location = new System.Drawing.Point(1165, 564);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 29);
             this.button1.TabIndex = 17;
@@ -275,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1195, 784);
+            this.ClientSize = new System.Drawing.Size(1279, 784);
             this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.matrizRBA);
