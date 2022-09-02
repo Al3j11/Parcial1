@@ -62,7 +62,7 @@
             this.buttonSalir.Location = new System.Drawing.Point(833, 28);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(102, 29);
-            this.buttonSalir.TabIndex = 9;
+            this.buttonSalir.TabIndex = 7;
             this.buttonSalir.Text = "SALIR";
             this.buttonSalir.UseVisualStyleBackColor = true;
             this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
@@ -234,7 +234,7 @@
             this.buttonMultiplicar.Location = new System.Drawing.Point(23, 90);
             this.buttonMultiplicar.Name = "buttonMultiplicar";
             this.buttonMultiplicar.Size = new System.Drawing.Size(102, 29);
-            this.buttonMultiplicar.TabIndex = 7;
+            this.buttonMultiplicar.TabIndex = 6;
             this.buttonMultiplicar.Text = "MULTIPLICAR";
             this.buttonMultiplicar.UseVisualStyleBackColor = true;
             // 
@@ -243,7 +243,7 @@
             this.buttonAgregar.Location = new System.Drawing.Point(23, 39);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(102, 29);
-            this.buttonAgregar.TabIndex = 6;
+            this.buttonAgregar.TabIndex = 5;
             this.buttonAgregar.Text = "AGREGAR";
             this.buttonAgregar.UseVisualStyleBackColor = true;
             // 
