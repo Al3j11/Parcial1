@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonSalir = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,6 +51,8 @@
             this.matrizRAB = new System.Windows.Forms.DataGridView();
             this.matrizRBA = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.matrizA)).BeginInit();
@@ -60,6 +63,9 @@
             // 
             // buttonSalir
             // 
+            this.buttonSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.buttonSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonSalir.Image = ((System.Drawing.Image)(resources.GetObject("buttonSalir.Image")));
             this.buttonSalir.Location = new System.Drawing.Point(1165, 627);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(102, 29);
@@ -70,13 +76,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textColmMA);
             this.groupBox1.Controls.Add(this.textFilasMA);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Location = new System.Drawing.Point(175, 39);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(312, 80);
+            this.groupBox1.Size = new System.Drawing.Size(377, 80);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MATRIZ A";
@@ -84,6 +93,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.Location = new System.Drawing.Point(160, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 15);
@@ -93,7 +104,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 26);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(10, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 15);
             this.label1.TabIndex = 2;
@@ -115,10 +128,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.textColmMB);
             this.groupBox2.Controls.Add(this.textFilasMB);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Location = new System.Drawing.Point(703, 39);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(312, 80);
@@ -129,6 +144,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
             this.label3.Location = new System.Drawing.Point(160, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 15);
@@ -138,6 +155,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
             this.label4.Location = new System.Drawing.Point(22, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 15);
@@ -162,6 +181,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
             this.label5.Location = new System.Drawing.Point(359, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(15, 15);
@@ -171,7 +192,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(907, 144);
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
+            this.label6.Location = new System.Drawing.Point(896, 144);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 15);
             this.label6.TabIndex = 8;
@@ -198,6 +221,9 @@
             // 
             // buttonMultiplicar
             // 
+            this.buttonMultiplicar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.buttonMultiplicar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonMultiplicar.Image = ((System.Drawing.Image)(resources.GetObject("buttonMultiplicar.Image")));
             this.buttonMultiplicar.Location = new System.Drawing.Point(1144, 109);
             this.buttonMultiplicar.Name = "buttonMultiplicar";
             this.buttonMultiplicar.Size = new System.Drawing.Size(102, 29);
@@ -208,6 +234,9 @@
             // 
             // buttonAgregar
             // 
+            this.buttonAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Navy;
+            this.buttonAgregar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonAgregar.Image = ((System.Drawing.Image)(resources.GetObject("buttonAgregar.Image")));
             this.buttonAgregar.Location = new System.Drawing.Point(1144, 51);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(102, 29);
@@ -263,6 +292,9 @@
             // 
             // button1
             // 
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(1165, 564);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 29);
@@ -271,12 +303,38 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Image = ((System.Drawing.Image)(resources.GetObject("label9.Image")));
+            this.label9.Location = new System.Drawing.Point(909, 436);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(14, 15);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "B";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label10.Image = ((System.Drawing.Image)(resources.GetObject("label10.Image")));
+            this.label10.Location = new System.Drawing.Point(360, 436);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(28, 15);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "BxA";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1279, 784);
             this.ControlBox = false;
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.matrizRBA);
             this.Controls.Add(this.matrizRAB);
@@ -332,5 +390,7 @@
         private DataGridView matrizRAB;
         private DataGridView matrizRBA;
         private Button button1;
+        private Label label9;
+        private Label label10;
     }
 }
